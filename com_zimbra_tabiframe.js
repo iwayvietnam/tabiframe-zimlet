@@ -36,8 +36,9 @@ com_zimbra_tabiframe_HandlerObject.prototype.constructor = com_zimbra_tabiframe_
  */
 com_zimbra_tabiframe_HandlerObject.prototype.init = function() {
     this.url = this.getZimletContext().getConfig('tab-url');
-    var desc = AjxMessageFormat.format(this.getMessage('tabDescription'), this.url);
-    this._simpleAppName = this.createApp(this.getMessage('tabLabel'), "zimbraIcon", desc);
+    var label = this.getZimletContext().getConfig('tab-label');
+    var desc = AjxMessageFormat.format(this.getMessage('tab-description'), this.url);
+    this._simpleAppName = this.createApp(label, 'zimbraIcon', desc);
 };
 
 /**
