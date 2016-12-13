@@ -36,7 +36,7 @@ com_zimbra_tabiframe_HandlerObject.prototype.constructor = com_zimbra_tabiframe_
  */
 com_zimbra_tabiframe_HandlerObject.prototype.init = function() {
     this.url = this.getZimletContext().getConfig('tab-url');
-    var label = this.getZimletContext().getConfig('tab-label');
+    var label = this.getMessage('tab-label');
     var desc = AjxMessageFormat.format(this.getMessage('tab-description'), this.url);
     this._simpleAppName = this.createApp(label, 'zimbraIcon', desc);
 };

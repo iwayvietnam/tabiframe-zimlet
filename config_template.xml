@@ -20,6 +20,5 @@
 <zimletConfig name="com_zimbra_tabiframe" version="0.1">
     <global>
         <property name="tab-url">https://www.securemail.vn</property>
-        <property name="tab-label">SecureMail.vn</property>
     </global>
 </zimletConfig>
